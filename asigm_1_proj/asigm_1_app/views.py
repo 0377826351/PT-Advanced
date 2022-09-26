@@ -26,7 +26,8 @@ def register(request):
     if request.method == 'POST':
         response = HttpResponse()
 
-        new_user = User(username=request.POST['username'],email=request.POST['email'],password=request.POST['password'])
+        new_user = User(username=request.POST['username'],email=request.POST['email'],is_superuser=True,is_staff=True)
+        new_user.set_password(request.POST['password'])
         new_user.save()
 
         response.write("<h1>Thanks for RES</h1></br>")
