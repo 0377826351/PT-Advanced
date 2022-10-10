@@ -15,6 +15,18 @@ def index(request):
     }
     return HttpResponse(template.render(context,request))
 
+# update
+# def index(request):
+#     template = loader.get_template('uploadimage.html')
+#     if request.method == 'POST':
+#         a = Animal.objects.get(pk=1)
+#         f = AnimalForm(request.POST, instance=a)
+#         f.save()
+#     context = {
+#         'obj':'ga'
+#     }
+#     return HttpResponse(template.render(context,request))
+
 def animal(request):
     template = loader.get_template('animal.html')
     if request.method == 'POST':
