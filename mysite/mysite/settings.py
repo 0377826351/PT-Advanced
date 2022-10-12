@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls',
     'file_uploader',
+    'pagination',
 ]
 
 MIDDLEWARE = [
