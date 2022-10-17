@@ -20,5 +20,6 @@ urlpatterns = [
     path('',include('polls.urls')),
     path('uploadFile',include('file_uploader.urls')),
     path('pagination',include('pagination.urls')),
+    path('adv_template/',include('adv_template.urls')),
     path('admin/',admin.site.urls),
 ]

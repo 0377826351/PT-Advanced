@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{%block title%}
+    List of countries of the world
+{% endblock title %}
+
+{% block content %}
+
+<h1>
+    There are about 200 countries in the world
+</h1>
+<p>
+    Some of famous countries are:
+</p>
+<div>
+    <ul>
+        {% for ct in countries %}
+            <li>
+                <a href='list_ct/{{ ct }}'>{{ct|upper}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}

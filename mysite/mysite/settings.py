@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'polls',
     'file_uploader',
     'pagination',
+    'adv_template'
 ]
 
 MIDDLEWARE = [
