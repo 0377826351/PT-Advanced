@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'polls',
     'file_uploader',
     'pagination',
-    'adv_template'
+    'adv_template',
+    'send_email',
 ]
 
 MIDDLEWARE = [
